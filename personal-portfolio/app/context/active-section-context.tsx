@@ -9,7 +9,7 @@ type ActiveSectionContextProviderProps = {
 type ActiveSectionContextType = {
     activeSection:SectionName;
     setActiveSection:React.Dispatch<React.SetStateAction<SectionName>>;
-    timeofLastClick:number;
+    timeOfLastClick:number;
     setTimeOfLastClick:React.Dispatch<React.SetStateAction<number>>
 }
 
@@ -19,13 +19,13 @@ export default function ActiveSectionContextProvider({
     children
 }:ActiveSectionContextProviderProps){
     const [activeSection,setActiveSection] = useState<SectionName>("Home")
-    const [timeofLastClick,setTimeOfLastClick]= useState(0)
+    const [timeOfLastClick,setTimeOfLastClick]= useState(0)
 
     return (
         <ActiveSectionContext.Provider value={{
             activeSection,
             setActiveSection,
-            timeofLastClick,
+            timeOfLastClick,
             setTimeOfLastClick
         }}>
             {children}

@@ -8,10 +8,17 @@ import {BsArrowRight, BsLinkedin} from 'react-icons/bs'
 import {HiDownload} from 'react-icons/hi'
 import { FaGithub } from 'react-icons/fa';
 import { github_url, linked_url } from '../lib/data';
+import { useSectionInView } from '../lib/hooks';
+import { useActiveSectionContext } from '../context/active-section-context';
 
 const Intro = () => {
+    const {ref} = useSectionInView("Home",0.5)
+    const {setActiveSection,setTimeOfLastClick} = useActiveSectionContext()
   return (
-    <section className='mb-28 max-w-[50rem] text-center sm:mb-0'>
+    <section
+    ref={ref}
+    id='home'
+    className='mb-28 max-w-[50rem] text-center sm:mb-0'>
        <div className='flex items-center justify-center'>
             <div className='relative'>
                 <motion.div
@@ -61,7 +68,12 @@ const Intro = () => {
         animate={{opacity:1,y:0}}
         className='flex flex-col sm:flex-row items-center justify-center gap-3 px-4 text-lg font-medium'>
             <Link className='bg-gray-900 text-white group px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110
-            active:scale-105 hover:bg-gray-950 transition' href={"#contact"}> Contact me here <BsArrowRight className="group-hover:translate-x-1 opacity-70"/> </Link>
+            active:scale-105 hover:bg-gray-950 transition' 
+            onClick={()=>{
+                setActiveSection("Contact")
+                setTimeOfLastClick(Date.now())
+            }}
+            href={"#contact"}> Contact me here <BsArrowRight className="group-hover:translate-x-1 opacity-70"/> </Link>
 
             <a href='/UtsabCV.pdf' className='group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110
             transition cursor-pointer
