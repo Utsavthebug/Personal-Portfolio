@@ -41,7 +41,7 @@ export const links = [
       title: "Graduated in BSC.CSIT",
       location: "Tribhuwan University",
       description:
-        "I Completed by Four years Bachelors degree in Computer Science",
+        "I Completed my Four years Bachelors degree in Computer Science",
       icon: React.createElement(LuGraduationCap),
       date: " 2017 - 2022",
     },
