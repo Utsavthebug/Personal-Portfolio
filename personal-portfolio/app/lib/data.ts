@@ -38,57 +38,57 @@ export const links = [
   
   export const experiencesData = [
     {
-      title: "Graduated bootcamp",
-      location: "Miami, FL",
+      title: "Graduated in BSC.CSIT",
+      location: "Tribhuwan University",
       description:
-        "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+        "I Completed by Four years Bachelors degree in Computer Science",
       icon: React.createElement(LuGraduationCap),
-      date: "2019",
+      date: " 2017 - 2022",
     },
     {
-      title: "Front-End Developer",
-      location: "Orlando, FL",
+      title: "Backend Internship",
+      location: "",
       description:
-        "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+        "I worked as backend intern and worked with API development and Scaling in express.js and mongodb",
       icon: React.createElement(CgWorkAlt),
-      date: "2019 - 2021",
+      date: " 3 months",
     },
     {
-      title: "Full-Stack Developer",
-      location: "Houston, TX",
+      title: " React Front-End Developer",
+      location: "Web Experts Nepal ",
       description:
-        "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-      icon: React.createElement(FaReact),
-      date: "2021 - present",
-    },
+        "I worked as a React front-end developer. Worked on two large Scale Project. Staying here I upskilled myself to Full Stack developer",
+      icon: React.createElement(CgWorkAlt),
+      date: " 2022 - Present",
+    }
   ] as const;
   
   export const projectsData = [
     {
       title: "Dashboard",
       description:
-        "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
+        "This is my personal project where I developed a simple dashboard page which can be reused on various ecommerce platform as admin dashboard.",
       tags: ["React","React-Calendar", "Material UI"],
       imageUrl: DashboardImage,
     },
     {
       title: "Emi 3.0",
       description:
-        "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
+        "This a Enterprise Level Project in which i worked as front end developer. I learn many under the hood of react and front end in this project. Many advanced front end concepts is used in this project",
       tags: ["React", "TypeScript", "Next.js", "Material UI", "Redux"],
       imageUrl: EmiImage,
     },
     {
       title: "Nike Landing Page",
       description:
-        "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
+        "This is a simple landing Page which i developed when I was learning next.js and tailwind CSS.",
       tags: ["React", "Next.js","Tailwind"],
       imageUrl: NikeLandingPage,
     },
     {
         title: "Whats app Clone",
         description:
-          "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
+          "This is a Full stack Chat Application Project developed from scratch. Mongodb is used as a database and socket.io is used for real time communication. It has real time message communication,private chats,group chats.",
         tags: ["React", "Mongodb", "Tailwind", "Redux Toolkit"],
         imageUrl: WhatsAppClone,
       },
