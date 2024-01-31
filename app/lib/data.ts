@@ -4,10 +4,10 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import DashboardImage from '@/public/projectImage/dashboardpage.png'
-import EmiImage from '@/public/projectImage/emi.png'
-import NikeLandingPage from '@/public/projectImage/nikelandingpage.png'
-import WhatsAppClone from '@/public/projectImage/whatsappclone.png'
+import DashboardImage from '@/public/dashboardpage.png'
+import EmiImage from '@/public/emi.png'
+import NikeLandingPage from '@/public/nikelandingpage.png'
+import WhatsAppClone from '@/public/whatsappclone.png'
 
 export const links = [
     {

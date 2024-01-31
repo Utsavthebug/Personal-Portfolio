@@ -52,6 +52,7 @@ const Project = ({
     </ul>
         </div>
     <Image
+    unoptimized
     src={imageUrl}
     alt='Project I worked on'
     quality={95}

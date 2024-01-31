@@ -1,7 +1,7 @@
 'use client';
 import React from 'react'
 import Image from 'next/image'
-import ProfileImage from '@/public/projectImage/Profile.jpg'
+import ProfileImage from '@/public/Profile.jpg'
 import {motion} from 'framer-motion';
 import Link from 'next/link';
 import {BsArrowRight, BsLinkedin} from 'react-icons/bs'
@@ -30,6 +30,7 @@ const Intro = () => {
                 }}
                 >
                 <Image
+                unoptimized
                 src={ProfileImage}
                 alt='Profile Picture'
                 quality={95}
